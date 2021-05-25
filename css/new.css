@@ -1,0 +1,275 @@
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+overflow-y: scroll
+}
+ol, ul, li, dd, dl, dt{
+list-style: none;
+}
+body{
+font: normal 12px 'klavica';
+color:#666;
+}
+a{
+text-decoration: none; 
+color: #999;
+}
+a:hover {
+text-decoration: none; 
+color: #000;
+}
+img{
+border: 0;
+vertical-align: top;
+}
+
+@font-face {
+font-family: 'klavica';
+src: url('../font/KlavikaRegular-OSF.eot');
+src: url('../font/KlavikaRegular-OSF.eot?#iefix') format('embedded-opentype'),
+url('../font/KlavikaRegular-OSF.woff2') format('woff2'),
+url('../font/KlavikaRegular-OSF.woff') format('woff'),
+url('../font/KlavikaRegular-OSF.ttf')  format('truetype'),
+url('../font/KlavikaRegular-OSF.svg#FontName') format('svg');
+}
+@font-face {
+font-family: 'rix';
+src: url('../font/RixGoM.eot');
+src: url('../font/RixGoM.eot?#iefix') format('embedded-opentype'),
+url('../font/RixGoM.woff2') format('woff2'),
+url('../font/RixGoM.woff') format('woff'),
+url('../font/RixGoM.ttf')  format('truetype'),
+url('../font/RixGoM.svg#FontName') format('svg');
+}
+@font-face {
+font-family: 'caps';
+src: url('../font/KlavikaRegCaps.eot');
+src: url('../font/KlavikaRegCaps.eot?#iefix') format('embedded-opentype'),
+url('../font/KlavikaRegCaps.woff2') format('woff2'),
+url('../font/KlavikaRegCaps.woff') format('woff'),
+url('../font/KlavikaRegCaps.ttf')  format('truetype'),
+url('../font/KlavikaRegCaps.svg#FontName') format('svg');
+}
+
+/* 헤더 */
+#header { 
+width: 100%;
+height: 100px;
+background-color: #f8f8f7;
+}
+.menu{ 
+position: relative;
+width: 1000px;
+height: 100px;
+margin: 0 auto;
+max-width: 1200px;
+}
+#header h1{
+color: #333;
+font-size: 40px;
+text-align: center;
+line-height: 70px;
+}
+#header h1 span{
+  display: block;
+  font-size: 25px;
+  line-height: 0;
+  color: #555;
+}
+
+/* 상단 포트폴리오 바로가기 */
+#btn_portfolio { 
+position: absolute; 
+right: -1px;
+top:0; 
+width: 165px; 
+border-left: 1px solid #ececec; 
+background: url(../images/layout/icon_mobile.jpg) no-repeat 35px 18px;
+font-size: 16px;
+}
+#btn_portfolio .mobile {
+border-bottom: 1px solid #ececec;
+text-align: center;
+padding-left: 60px;
+line-height: 45px;
+}
+#btn_portfolio li span { 
+background-color: #fff; 
+float: left;
+position: absolute; 
+left: 0;
+top: 46px; 
+display: none;
+}
+#btn_portfolio li span a{
+float: left;
+}
+#btn_portfolio li span .pr1 { 
+padding-right: 1px;
+}
+
+/* 컨텐츠 */
+.contents_main{
+width: 100%;
+}
+.contents_main ul{
+display: flex;
+}
+.contents_main .card{
+width: 25%;
+height: 824px;
+position: relative;
+}
+.contents_main .card div{
+  width: 100%;
+  height: 824px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contents_main .card .front img{
+  opacity: 0.7;
+  width: 60%;
+  padding: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 250px;
+}
+.contents_main .card li:hover{
+  border: 3px outset #999;
+}
+.contents_main .card1{
+background-color: #ece9e4;
+}
+.contents_main .card1 p{
+  width: 250px;
+  height: 250px;
+  background-color: #999;
+  border-radius: 125px;
+  margin-bottom: 20px;
+}
+.contents_main .card2{
+background-color: #f3e8dc;
+}
+.contents_main .card3{
+background-color: #d8c4b2;
+}
+.contents_main .card3 .preview{
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #999;
+}
+.contents_main .card3 img{
+  width: 100%;
+}
+.contents_main .card3.on{
+  width: 150%;
+}
+.contents_main .card3.on dl{
+  width: 25%;
+  float: left;
+}
+.contents_main .card3.on .back .preview{
+  width: 70%;
+}
+.contents_main .card3.on .back img{
+  width: 100%;
+}
+.contents_main .card4{
+background-color: #be9982;
+}
+.contents_main h2{
+text-align: center;
+font-size: 24px;
+padding: 30px;
+}
+.contents_main p{
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+.contents_main .card dl{
+  text-align: center;
+  padding: 10px;
+}
+.contents_main .card dl dt{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contents_main .card dl dd{
+  line-height: 25px;
+}
+
+/* 카드뒤집기 */
+.back{
+  transform:rotateY(90deg);
+}
+.cardRotate .front{
+  opacity: 1;
+  animation: rotateAni 0.5s 1;
+  transform: rotateY(90deg);
+}
+.cardRotate .back{
+  opacity: 1;
+  animation: rotateAni2 0.5s 0.5s 1 backwards; 
+  transform: rotateY(0);
+}
+.backRotate .front{
+  opacity: 1;
+  animation: backAni 0.5s   1;
+}
+.backRotate .back{
+  opacity: 0;
+}
+@keyframes rotateAni{
+  0%{
+    transform: rotateY(0);
+  }
+  100%{
+    transform: rotateY(90deg);
+  }
+}
+@keyframes rotateAni2{
+  0%{
+    transform: rotateY(-90deg);
+  }
+  100%{
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes backAni{
+  0%{
+    transform: rotateY(90deg);
+  }
+  100%{
+    transform: rotateY(0deg);
+  }
+}
+
+/* 푸터 */
+#footer{
+background-color: #f8f8f7; 
+width: 100%;
+height: 55px;
+}
+.footer_contents { 
+width: 1000px; 
+height: 55px;
+margin: 0 auto; 
+text-align: center;
+}
+.copyright{
+color: #abb6c8;
+line-height: 55px;
+}
+.copyright span{ 
+color: #5d7599; 
+font-weight: bold;
+}
+.btn_top{
+float: right;
+}
