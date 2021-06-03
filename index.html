@@ -1,381 +1,80 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>STARY 01</title>
-        <!-- styles -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-        <link rel="stylesheet" href="css/app.css">
-        <!-- // styles -->
-        <!-- script -->
-        <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="js/ui/swiper-bundle.js"></script>
-        <script src="js/ui/nice-select.js"></script>
-        <script src="js/ui/iscroll.js"></script>
-        <script src="js/common.js"></script>
-        <!-- // script -->
-    </head>
-    <body>
-        <div class="skip-navigation">
-            <a href="#container">메뉴 건너뛰기</a>
-        </div>
-        <div id="wrap">
-            <!-- header -->
-            <header>
-                <div class="header_top">
-                    <h1>
-                        <a href="/" class="logo">
-                            <img src="images/img-logo.png" alt="우리인슈맨라이프 로고">
-                        </a>
-                    </h1>
-                </div>
-                <div class="header_bottom">
-                    <button type="button" class="btn_gnb"><span aria-hidden="true">&nbsp;</span><em class="blind">전체메뉴</em></button>
-                    <div class="nav_area">
-                        <!-- gnb -->
-                        <nav id="gnb">
-                            <ul>
-                                <li class="more">
-                                    <a href="page/sub_01_01.html">회사소개</a>
-                                    <button type="button" class="m_depth"><span class="blind">하위메뉴 더보기</span></button>
-                                    <ul class="sub_depth">
-                                        <li><a href="page/sub_01_01.html">회사개요</a></li>
-                                        <li><a href="page/sub_01_02.html">CEO인사말</a></li>
-                                        <li><a href="page/sub_01_03.html">미션&amp;비전</a></li>
-                                        <li><a href="page/sub_01_04.html">CI/BI</a></li>
-                                        <li><a href="page/sub_01_05.html">찾아오시는 길</a></li>
-                                    </ul>
-                                </li>
-                                <li class="more">
-                                    <a href="page/sub_02_01.html">서비스 브랜드</a>
-                                    <button type="button" class="m_depth"><span class="blind">하위메뉴 더보기</span></button>
-                                    <ul class="sub_depth">
-                                        <li><a href="page/sub_02_01.html">인슈앱</a></li>
-                                        <li><a href="page/sub_02_02.html">우리인슈맨라이프</a></li>
-                                        <li><a href="page/sub_02_03.html">인슈몰</a></li>
-                                        <li><a href="page/sub_02_04.html">인슈프렌드</a></li>
-                                    </ul>
-                                </li>
-                                <li class="more">
-                                    <a href="page/sub_03_01.html">보험컨설팅</a>
-                                    <button type="button" class="m_depth"><span class="blind">하위메뉴 더보기</span></button>
-                                    <ul class="sub_depth">
-                                        <li><a href="page/sub_03_01.html">재무컨설팅소개</a></li>
-                                        <li><a href="page/sub_03_02.html">희망&amp;드림</a></li>
-                                        <li><a href="page/sub_03_03.html">모으자보험</a></li>
-                                        <li><a href="page/sub_03_04.html">맞춤재무</a></li>
-                                    </ul>
-                                </li>
-                                <li class="more">
-                                    <a href="page/sub_04_01.html">보험비교</a>
-                                    <button type="button" class="m_depth"><span class="blind">하위메뉴 더보기</span></button>
-                                    <ul class="sub_depth">
-                                        <li><a href="page/sub_04_01.html">보험비교서비스</a></li>
-                                        <li><a href="page/sub_04_02.html">우리인슈매니저 소개</a></li>
-                                    </ul>
-                                </li>
-                                <li class="more">
-                                    <a href="page/sub_05_01.html">커뮤니티</a>
-                                    <button type="button" class="m_depth"><span class="blind">하위메뉴 더보기</span></button>
-                                    <ul class="sub_depth">
-                                        <li><a href="page/sub_05_01.html">NEWS</a></li>
-                                        <li><a href="page/sub_05_01.html">SNS</a></li>
-                                    </ul>
-                                </li>
-                                <li class="more">
-                                    <a href="page/sub_06_01.html">인재채용관</a>
-                                    <button type="button" class="m_depth"><span class="blind">하위메뉴 더보기</span></button>
-                                    <ul class="sub_depth">
-                                        <li><a href="page/sub_06_01.html">인재상</a></li>
-                                        <li><a href="page/sub_06_02.html">인사제도</a></li>
-                                        <li><a href="page/sub_06_03.html">복리후생</a></li>
-                                        <li><a href="page/sub_06_04.html">채용공고</a></li>
-                                    </ul>
-                                </li>
-                                <li class="more">
-                                    <a href="page/sub_07_01.html">고객센터</a>
-                                    <button type="button" class="m_depth"><span class="blind">하위메뉴 더보기</span></button>
-                                    <ul class="sub_depth">
-                                        <li><a href="page/sub_07_01.html">보험종합상담</a></li>
-                                        <li><a href="page/sub_07_02.html">서비스소개</a></li>
-                                        <li><a href="page/sub_07_03.html">보험가입요령</a></li>
-                                        <li><a href="page/sub_07_04.html">보험금청구 준비서류</a></li>
-                                        <li><a href="page/sub_07_05.html">공지사항</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                        <!-- // gnb -->
-                    </div>
-                    <span class="subdep-bg" aria-hidden="true">&nbsp;</span>
-                    <span class="mob-dim" aria-hidden="true" onClick="gnbClose()">&nbsp;</span>
-                </div>
-            </header>
-            <!-- // header -->
-            <!-- container -->
-            <div id="container" class="container main">
-                <!-- main visual -->
-                <div class="main-visual swiper-container">
-                    <!-- img background slide -->
-                    <div class="swiper-wrapper" aria-hidden="true">
-                        <div class="swiper-slide bg1">
-                            <div class="text-overlay">
-                                <p><img src="images/bg/bg-txt.png" alt="비대면 보험전문가의 꿈! 우리 인슈에서 이루어보세요. 우리인슈매니저 공개모집"></p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide bg2">
-                            <div class="text-overlay">
-                                <p><img src="images/bg/bg-txt.png" alt="비대면 보험전문가의 꿈! 우리 인슈에서 이루어보세요. 우리인슈매니저 공개모집"></p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide bg3">
-                            <div class="text-overlay">
-                                <p><img src="images/bg/bg-txt.png" alt="비대면 보험전문가의 꿈! 우리 인슈에서 이루어보세요. 우리인슈매니저 공개모집"></p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide bg4">
-                            <div class="text-overlay">
-                                <p><img src="images/bg/bg-txt.png" alt="비대면 보험전문가의 꿈! 우리 인슈에서 이루어보세요. 우리인슈매니저 공개모집"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- // img background slide -->
-                    <!-- slide controller -->
-                    <div class="swiper-controller">
-                        <div class="swiper-prev">PREV</div>
-                        <div class="swiper-paging"></div>
-                        <div class="swiper-next">NEXT</div>
-                    </div>
-                    <!-- // slide controller -->
-                </div>
-                <!-- // main visual -->
-                <!-- main section1 -->
-                <div class="section1">
-                    <div class="sec_con">
-                        <div class="left">
-                            <div class="tit_wrap">
-                                <h3 class="tit">Find Your<br>INSURANCE</h3>
-                                <p class="desc">보험 비교 전문가 우리인슈맨은 개개인의 맞춤 보험을 비교추천하여, 현명한 보험 선택을 도와드립니다.</p>
-                            </div>
-                        </div>
-                        <ul class="insu-lists">
-                            <li>
-                                <span class="img" aria-hidden="true"><img src="images/img-visual-sm01.jpg" alt=""></span>
-                                <div class="inner">
-                                    <p>SERVICE 01</p>
-                                    <dl>
-                                        <dt>보험비교서비스</dt>
-                                        <dd>우리인슈맨몰에서는 다양한 보험상품을 비교하여 나에게 맞는 보험을 찾고, 상담을 통해서 정확한 보험을 추천 받게 됩니다.</dd>
-                                    </dl>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="img" aria-hidden="true"><img src="images/img-visual-sm02.jpg" alt=""></span>
-                                <div class="inner">
-                                    <p>SERVICE 02</p>
-                                    <dl>
-                                        <dt>보험비교서비스</dt>
-                                        <dd>우리인슈맨몰에서는 다양한 보험상품을 비교하여 나에게 맞는 보험을 찾고, 상담을 통해서 정확한 보험을 추천 받게 됩니다.</dd>
-                                    </dl>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- // main section1 -->
-                <!-- main section2 -->
-                <div class="section2">
-                    <div class="main_text">
-                        <p class="tit">WOORIINSUMAN LIFE<small>우리인슈맨라이프</small></p>
-                        <p class="desc">
-                            <em>With us your happy life</em>
-                            고객에게 딱 맞는 최적의 보험상품을 추천하며, 1:1 재무컨설팅을 통해 고객의 소중한 자산을 현명하게 설계/관리합니다.
-                        </p>
-                    </div>
-                </div>
-                <!-- // main section2 -->
-                <!-- main section3 -->
-                <div class="section3">
-                    <div class="sec_con">
-                        <div class="tit_wrap">
-                            <h3 class="tit">홍보센터</h3>
-                            <p class="desc">우리인슈맨라이프는 열린 소통을 기반으로 고객과 소통하고 있습니다.</p>
-                        </div>
-                        <ul class="date-lists">
-                            <li>
-                                <dl>
-                                    <dt>보험서비스 플랫폼 구축</dt>
-                                    <dd>2021년 5월 초 오픈을 목표로 보험서비스 플랫폼 구축을 진행하고 있습니다.</dd>
-                                    <dd class="date">2021.01.15</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>대표이사 신년 인사회</dt>
-                                    <dd>우승주대표이사님이 신년에 올해 비전을 담아 신년인사를 온라인을 통해 진행하였습니다.</dd>
-                                    <dd class="date">2021.01.04</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>회사 홈페이지 개편 착수</dt>
-                                    <dd>2021년 회사의 새로운 비전을 담아 홈페이지를 개편하고자 TF Team을 구성하였습니다.</dd>
-                                    <dd class="date">2020.12.15</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>맞춤 보험 비교추천 솔루션</dt>
-                                    <dd>보험 비교 전문가 우리인슈맨은 개개인의 맞춤 보험을 비교추천하여, 현명한 보험 선택을 도와드립니다.</dd>
-                                    <dd class="date">2020.11.17</dd>
-                                </dl>
-                            </li>
-                        </ul>
-                        <ul class="img_list">
-                            <li>
-                                <span class="img" aria-hidden="true"><img src="images/bg/bg-comp01.jpg" alt=""></span>
-                                <div class="overlay">
-                                    <dl>
-                                        <dt>핵심가치</dt>
-                                        <dd>보험과 금융으로 고객 행복 추구</dd>
-                                    </dl>
-                                    <a href="page/sub_01_03.html" class="btn round white h43"><span class="plus">DETAIL VIEW</span></a>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="img" aria-hidden="true"><img src="images/bg/bg-comp02.jpg" alt=""></span>
-                                <div class="overlay">
-                                    <dl>
-                                        <dt>VISION</dt>
-                                        <dd>2021 GA 업계 선두로 성장</dd>
-                                    </dl>
-                                    <a href="page/sub_01_03.html" class="btn round white h43"><span class="plus">DETAIL VIEW</span></a>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="img" aria-hidden="true"><img src="images/bg/bg-comp03.jpg" alt=""></span>
-                                <div class="overlay">
-                                    <dl>
-                                        <dt>HISTORY</dt>
-                                        <dd>GA 업계 새로운 역사</dd>
-                                    </dl>
-                                    <a href="page/sub_01_01.html" class="btn round white h43"><span class="plus">DETAIL VIEW</span></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- // main section3 -->
-                <!-- main section4 -->
-                <div class="section4">
-                    <div class="sec_con">
-                        <div class="tit_wrap">
-                            <h3 class="tit">WOORIINSUMAN LIFE<br>PEOPLE</h3>
-                            <p class="desc">우리인슈맨라이프와 함께 할 핵심가치를 보유하고,<br>비전 지향적인 글로벌 인재를 찾습니다.</p>
-                        </div>
-                        <a href="page/sub_06_04.html" class="btn round black h43"><span class="plus">채용안내 바로가기</span></a>
-                        <ul class="link_list">
-                            <li>
-                                <a href="page/sub_06_01.html">
-                                    <dl>
-                                        <dt>인재상</dt>
-                                        <dd>세계 속에 우뚝 선 아름다운 우리인슈맨라이프의 꿈에 동참할 젊은이를 초대합니다.</dd>
-                                    </dl>
-                                    <span>DETAIL VIEW</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="page/sub_06_02.html">
-                                    <dl>
-                                        <dt>인사제도</dt>
-                                        <dd>공정하고 투명한 심사기준으로 업무 수행 능력에 따른 평가제도</dd>
-                                    </dl>
-                                    <span>DETAIL VIEW</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="page/sub_06_03.html">
-                                    <dl>
-                                        <dt>복리후생</dt>
-                                        <dd>본인과 가족의 건강, 자녀의 교육과 노후까지 함께 지원하고 고민합니다.</dd>
-                                    </dl>
-                                    <span>DETAIL VIEW</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="page/sub_06_04.html">
-                                    <dl>
-                                        <dt>채용정보</dt>
-                                        <dd>우리인슈맨라이프에서 글로벌 인재로 거듭날 인재를 기다리고 있습니다.</dd>
-                                    </dl>
-                                    <span>DETAIL VIEW</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- // main section4 -->
-            </div>
-            <!-- // container -->
-            <!-- footer -->
-            <footer>
-                <div class="footer_con">
-                    <ul class="foot-link">
-                        <li><a href="#n">개인정보 처리방침</a></li>
-                        <li><a href="#n">이용약관</a></li>
-                    </ul>
-                    <div class="info_con">
-                        <ul class="corp_info">
-                            <li>
-                                <em>주소</em>경기 안양시 동안구 시민대로 383 디지털엠파이어빌딩 203호
-                            </li>
-                            <li>
-                                <em>대표이사</em>이한기
-                            </li>
-                            <li>
-                                <em>보험대리점명 및 보험대리점 등록번호</em>㈜우리인슈맨라이프(등록번호 제2007777773호)
-                            </li>
-                            <li>
-                                <em>사업자등록번호</em>100-80-90000
-                            </li>
-                            <li>
-                                <em>개인정보관리 담당자</em>준법감시인 우승주
-                            </li>
-                        </ul>
-                        <p class="copyright">Copyright ⓒ <em>Wooriinsuman Life.</em> All rights reserved.</p>
-                        <div class="contact_info">
-                            <dl class="call">
-                                <dt>대표전화</dt>
-                                <dd>02.6288.5000</dd>
-                            </dl>
-                            <ul class="sns_list">
-                                <li><a href="#n" class="sns2"><span class="blind">YOUTUBE</span></a></li>
-                                <li><a href="#n" class="sns3"><span class="blind">네이버 블로그</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- // footer -->
-        </div>
-        <script>
-            var swiper = new Swiper('.main-visual.swiper-container', {
-                autoplay: {
-                    delay: 5000,
-                },
-                loop: true,
-                slidesPerView: 1,
-                pagination: {
-                    el: '.swiper-paging',
-                    clickable: true
-                },
-                navigation: {
-                    nextEl: '.swiper-next',
-                    prevEl: '.swiper-prev'
-                },
-            })
-        </script>
-    </body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>STARY PORTFOLIO</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font-family: 'Days One', sans-serif;
+		}
+		.wrap{
+			width: 100%;
+			height: 100vh;
+		}
+		.intro{
+			width: 250px;
+			height: 250px;
+			margin: 0 auto;
+			text-align: center;
+			position: relative;
+			top: 40%;
+			border: 5px solid #000;
+			border-radius: 125px;
+		}
+		.intro:hover{
+			background-color: #000;
+		}
+		.intro:hover h1{
+			display: none;
+		}
+		.intro:hover p{
+			display: none;
+		}
+		.intro h1{
+			font-size: 50px;
+			letter-spacing: 1px;
+			line-height: 50px;
+			margin-top: 90px;
+			position: relative;
+			z-index: 1;
+		}
+		.intro p{
+			font-size: 23px;
+			letter-spacing: 5px;
+			line-height: 20px;
+			position: relative;
+			z-index: 1;
+		}
+		.intro h2{
+			font-size: 50px;
+			position: absolute;
+			top: 50%;
+			margin-top: -30px;
+			left: 50%;
+			margin-left: -100px;
+		}
+		.intro h2 a{
+			text-decoration: none;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+	    <div class="intro">
+	      <h1>STARY</h1>
+	      <p>PORTFOLIO</p>
+	      <h2><a href="main.html">ENTER</a></h2>
+	    </div>
+	</div>
+</body>
 </html>
