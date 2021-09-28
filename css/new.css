@@ -1,0 +1,298 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+overflow-y: scroll
+}
+ol, ul, li, dd, dl, dt{
+list-style: none;
+}
+body{
+font: normal 12px 'klavica';
+color:#666;
+}
+a{
+text-decoration: none; 
+color: #999;
+}
+a:hover {
+text-decoration: none; 
+color: #000;
+}
+img{
+border: 0;
+vertical-align: top;
+}
+
+@font-face {
+font-family: 'klavica';
+src: url('../font/KlavikaRegular-OSF.eot');
+src: url('../font/KlavikaRegular-OSF.eot?#iefix') format('embedded-opentype'),
+url('../font/KlavikaRegular-OSF.woff2') format('woff2'),
+url('../font/KlavikaRegular-OSF.woff') format('woff'),
+url('../font/KlavikaRegular-OSF.ttf')  format('truetype'),
+url('../font/KlavikaRegular-OSF.svg#FontName') format('svg');
+}
+@font-face {
+font-family: 'rix';
+src: url('../font/RixGoM.eot');
+src: url('../font/RixGoM.eot?#iefix') format('embedded-opentype'),
+url('../font/RixGoM.woff2') format('woff2'),
+url('../font/RixGoM.woff') format('woff'),
+url('../font/RixGoM.ttf')  format('truetype'),
+url('../font/RixGoM.svg#FontName') format('svg');
+}
+@font-face {
+font-family: 'caps';
+src: url('../font/KlavikaRegCaps.eot');
+src: url('../font/KlavikaRegCaps.eot?#iefix') format('embedded-opentype'),
+url('../font/KlavikaRegCaps.woff2') format('woff2'),
+url('../font/KlavikaRegCaps.woff') format('woff'),
+url('../font/KlavikaRegCaps.ttf')  format('truetype'),
+url('../font/KlavikaRegCaps.svg#FontName') format('svg');
+}
+
+/* header */
+header { 
+  width: 100%;
+  height: 100px;
+  background-color: #f8f8f7;
+}
+.header_wrap {
+  height: inherit;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.l_header_wrap {
+  width: 100px;
+  height: inherit;
+  display: table;
+}
+.l_header_wrap .main_logo {
+  width: 50px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.l_header_wrap .main_logo img {
+  animation: rotation_logo 5s infinite linear;
+}
+@keyframes rotation_logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.c_header_wrap h1{
+  color: #333;
+  font-size: 40px;
+  text-align: center;
+  line-height: 100px;
+}
+.r_header_wrap {
+  width: 100px;
+  height: inherit;
+  display: table;
+  padding: 42px 40px;
+}
+.r_header_wrap .h_btn {
+  width: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+.r_header_wrap .h_btn span {
+  background-color: #000;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  display: block;
+  position: absolute;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+.r_header_wrap .h_btn .h_btn_1 {
+  top: 0;
+}
+.r_header_wrap .h_btn .h_btn_2 {
+	top: 50%;
+	margin-top: -1px;
+}
+.r_header_wrap .h_btn .h_btn_3 {
+  bottom: 0;
+}
+.r_header_wrap .h_btn.hbtn_on .h_btn_1 {
+	transform: translateY(7px) rotate(45deg);
+}
+.r_header_wrap .h_btn.hbtn_on .h_btn_2 {
+	opacity: 0;
+}
+.r_header_wrap .h_btn.hbtn_on .h_btn_3 {
+	transform: translateY(-7px) rotate(-45deg);
+}
+.menu_container {
+  display: table;
+  height: 100vh;
+  padding: 50px;
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  right: -50%;
+  bottom: 0;
+  width: 50%;
+  background-color: #fff;
+  transition: all 0.4s;
+}
+.menu_container .menu_inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* contents */
+.contents {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.contents .project_list_wrap {}
+.contents .project_list_wrap .project_list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contents .project_list_wrap .project_list .project_item{
+  width: 50%;
+  padding-top: 50%;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contents .project_list_wrap .project_list .project_item .item_text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  margin: auto;
+  background-color: #f6b53f;
+  opacity: 0;
+  display: table;
+}
+.contents .project_list_wrap .project_list .project_item a .item_text p {
+  display: table-cell;
+  vertical-align: middle;
+  color: #000;
+  font-size: 36px;
+}
+.contents .project_list_wrap .project_list .project_item.item_01 {
+  background-image: url(../images/hyundai.jpg);
+}
+.contents .project_list_wrap .project_list .project_item.item_02 {
+  background-image: url(../images/goldsalt.jpg);
+}
+.contents .project_list_wrap .project_list .project_item.item_03 {
+  background-image: url(../images/koreauniv.jpg);
+}
+.contents .project_list_wrap .project_list .project_item.item_04 {
+  background-image: url(../images/wbodam.jpg);
+}
+.contents .project_list_wrap .project_list .project_item.item_05{
+  background-image: url(../images/blueshark.jpg);
+}
+.contents .project_list_wrap .project_list .project_item.item_06 {
+  background-image: url(../images/dreamworks.jpg);
+}
+.contents .project_list_wrap .project_list .project_item.item_07 {
+  background-image: url(../images/marvel.jpg);
+}
+.contents .project_list_wrap .project_list .project_item.item_08 {
+  background-image: url(../images/gshock.jpg);
+}
+.contents .project_list_wrap .project_list .project_item.item_09 {
+  background-image: url(../images/hitejinro.jpg);
+}
+.contents .project_list_wrap .project_list .project_item.item_10 {
+  background-color: #fff;
+}
+
+/* footer */
+footer{
+background-color: #f8f8f7; 
+width: 100%;
+height: 55px;
+}
+.footer_contents { 
+margin: 0 auto; 
+text-align: center;
+}
+.copyright{
+color: #abb6c8;
+line-height: 55px;
+}
+.copyright span{ 
+color: #5d7599; 
+font-weight: bold;
+}
+.btn_top{
+float: right;
+}
+
+/* tab */
+@media screen and (max-width: 1400px) {
+  .c_header_wrap h1{
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .c_header_wrap h1{
+    font-size: 32px;
+  }
+  .contents {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 646px) {
+  .contents .project_list_wrap .project_list .project_item:hover .item_text {
+    opacity: 0.8;
+    text-align: center;
+    transition: all 0.4s;
+  }
+}
+@media screen and (max-width: 645px) {
+  .c_header_wrap h1{
+    font-size: 28px;
+  }
+  .contents {
+    padding: 0 40px;
+  }
+  .contents .project_list_wrap .project_list{
+    flex-direction: column;
+  }
+  .contents .project_list_wrap .project_list .project_item{
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 40px;
+  }
+  .contents .project_list_wrap .project_list .project_item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* mob */
+@media screen and (max-width: 450px) {
+  .c_header_wrap h1{
+    font-size: 24px;
+  }
+  .contents {
+    padding: 0;
+  }
+}
