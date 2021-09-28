@@ -9,9 +9,21 @@ $(document).ready(function(){
 			$(this).css({
 				'z-index': '31'
 			});
+			$('.menu_dim').css({
+				'left': '0'
+			});
+			$('.project_list_wrap').css({
+				'width': '50%'
+			});
 		}else{
 			$('.menu_container').css({
 				'right': '-50%'
+			});
+			$('.menu_dim').css({
+				'left': '-50%'
+			});
+			$('.project_list_wrap').css({
+				'width': '100%'
 			});
 		};
 	});

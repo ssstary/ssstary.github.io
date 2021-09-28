@@ -1,10 +1,13 @@
+/* font */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
 html{
-overflow-y: scroll
+overflow-y: scroll;
 }
 ol, ul, li, dd, dl, dt{
 list-style: none;
@@ -135,6 +138,17 @@ header {
 .r_header_wrap .h_btn.hbtn_on .h_btn_3 {
 	transform: translateY(-7px) rotate(-45deg);
 }
+.menu_dim {
+  height: 100vh;
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  left: -50%;
+  bottom: 0;
+  width: 50%;
+  background-color: rgba(0,0,0,0.4);
+  transition: all 0.35s;
+}
 .menu_container {
   display: table;
   height: 100vh;
@@ -161,7 +175,9 @@ header {
   margin: 0 auto;
   padding: 0 50px;
 }
-.contents .project_list_wrap {}
+.contents .project_list_wrap {
+  width: 100%;
+}
 .contents .project_list_wrap .project_list{
   display: flex;
   flex-direction: row;
@@ -190,8 +206,9 @@ header {
 .contents .project_list_wrap .project_list .project_item a .item_text p {
   display: table-cell;
   vertical-align: middle;
-  color: #000;
+  color: #fff;
   font-size: 36px;
+  font-family: "NanumSquare";
 }
 .contents .project_list_wrap .project_list .project_item.item_01 {
   background-image: url(../images/hyundai.jpg);
