@@ -58,6 +58,13 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.btn_minimize').click(function(){
+		$('.mini_con').slideUp();
+	});
+	$('.btn_maximize').click(function(){
+		$('.mini_con').slideDown();
+	});
+
 	$('.mini_con_l > ul > li').click(function(){
 		$('.mini_con_l > ul > li').removeClass('mactive');
 		$(this).addClass('mactive');
