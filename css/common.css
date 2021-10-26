@@ -186,10 +186,11 @@ header {
 .menu_container .menu_inner ul li a:hover {
   text-decoration: none;
   color: #f6b53f;
-} 
+}
 
 /* contents */
-.contents {
+.contents.work,
+.contents.about {
   width: 100%;
   height: 100%;
   max-width: 1400px;
@@ -266,11 +267,23 @@ header {
   color: #fff;
   font-family: "NanumSquare";
 }
-.contents .project_list_wrap .project_list .project_item a .item_text .item_tit {
+.contents
+  .project_list_wrap
+  .project_list
+  .project_item
+  a
+  .item_text
+  .item_tit {
   font-size: 32px;
   margin-bottom: 20px;
 }
-.contents .project_list_wrap .project_list .project_item a .item_text .item_desc {
+.contents
+  .project_list_wrap
+  .project_list
+  .project_item
+  a
+  .item_text
+  .item_desc {
   font-size: 18px;
   margin-bottom: 20px;
 }
@@ -495,7 +508,7 @@ footer {
   .menu_container .menu_inner {
     font-size: 30px;
   }
-  .contents {
+  .contents.work, .contents.about {
     padding: 0 30px;
   }
 }
@@ -520,15 +533,27 @@ footer {
   .menu_container .menu_inner {
     font-size: 26px;
   }
-  .contents {
+  .contents.work, .contents.about {
     padding: 0 25px;
     margin-top: 60px;
   }
-  .contents .project_list_wrap .project_list .project_item a .item_text .item_tit {
+  .contents
+    .project_list_wrap
+    .project_list
+    .project_item
+    a
+    .item_text
+    .item_tit {
     font-size: 24px;
     margin-bottom: 15px;
   }
-  .contents .project_list_wrap .project_list .project_item a .item_text .item_desc {
+  .contents
+    .project_list_wrap
+    .project_list
+    .project_item
+    a
+    .item_text
+    .item_desc {
     font-size: 14px;
     margin-bottom: 15px;
   }
@@ -539,7 +564,12 @@ footer {
     text-align: center;
     transition: all 0.4s;
   }
-  .contents .project_list_wrap .project_list .project_item:hover .item_text img {
+  .contents
+    .project_list_wrap
+    .project_list
+    .project_item:hover
+    .item_text
+    img {
     left: 0;
   }
 }
@@ -553,7 +583,7 @@ footer {
   .menu_container .menu_inner {
     font-size: 22px;
   }
-  .contents {
+  .contents.work, .contents.about {
     padding: 0 20px;
   }
   .contents .project_list_wrap .project_list {
