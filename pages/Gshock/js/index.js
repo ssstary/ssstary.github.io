@@ -6,6 +6,9 @@ $(document).ready(function(){
 	});
 
 	//////
+	$('.clc_sort > li').eq(0).first().addClass('on');
+	$('.clc_view > ul').hide();
+	$('.clc_view > ul').eq(0).first().show();
 	$('.clc_sort > li').click(function(){
 		$('.clc_sort > li').removeClass('on');
 		$(this).addClass('on');
