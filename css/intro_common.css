@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  div.inner_wrap {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 1.25em;
+    color: #000;
+    text-align: center;
+  }
+
+  /* header */
+
+  header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+  }
+  header > div.inner_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  header > div.inner_wrap > div.nav_bg {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 98;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  header > div.inner_wrap > nav {
+    position: fixed;
+    display: block;
+    top: -60%;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    padding-top: 45px;
+    background: #fff;
+    transition: all 0.3s;
+  }
+  header > div.inner_wrap > nav > ul {
+    width: 100%;
+  }
+  header > div.inner_wrap > nav > ul > li {
+    padding: 25px 0;
+    text-align: center;
+  }
+  header > div.inner_wrap > nav > ul > li > a {
+    display: inline-block;
+    font-size: 0.8125em;
+    font-weight: bold;
+    color: #313131;
+  }
+  header > div.inner_wrap > button {
+    display: block;
+    position: absolute;
+    top: 27px;
+    right: 10px;
+    z-index: 100;
+    width: 20px;
+    height: 16px;
+    background: url("../images/btn_ui_menu.png") no-repeat center center;
+    background-size: cover;
+    text-indent: -99999em;
+  }
+
+  /* footer */
+
+  footer {
+    width: 100%;
+    height: 160px;
+  }
+  footer > div.inner_wrap {
+    height: 160px;
+    padding: 20px 0;
+    border-top: 1px solid #ebebeb;
+  }
+  footer > div.inner_wrap > p {
+    padding-bottom: 10px;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  div.inner_wrap {
+    width: 100%;
+    max-width: 728px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 1.5em;
+    color: #000;
+    text-align: center;
+  }
+
+  /* header */
+
+  header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+  }
+  header > div.inner_wrap > nav > ul {
+    width: 100%;
+  }
+  header > div.inner_wrap > nav > ul > li {
+    float: left;
+    width: 33.3333%;
+    padding: 25px 0;
+    text-align: center;
+  }
+  header > div.inner_wrap > nav > ul > li > a {
+    display: inline-block;
+    font-weight: bold;
+    color: #313131;
+  }
+  header > div.inner_wrap > button {
+    display: none;
+  }
+
+  /* footer */
+
+  footer {
+    width: 100%;
+    height: 160px;
+  }
+  footer > div.inner_wrap {
+    height: 160px;
+    padding: 20px 0;
+    border-top: 1px solid #ebebeb;
+  }
+  footer > div.inner_wrap > p {
+    padding-bottom: 20px;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 1025px) {
+  div.inner_wrap {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 2.25em;
+    text-align: center;
+  }
+
+  /* header */
+
+  header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+  }
+  header > div.inner_wrap > nav > ul {
+    width: 100%;
+  }
+  header > div.inner_wrap > nav > ul > li {
+    float: left;
+    width: 33.3333%;
+    padding: 25px 0;
+    text-align: center;
+  }
+  header > div.inner_wrap > nav > ul > li > a {
+    display: inline-block;
+    font-weight: bold;
+    color: #313131;
+  }
+  header > div.inner_wrap > button {
+    display: none;
+  }
+
+  /* footer */
+
+  footer {
+    width: 100%;
+    height: 160px;
+  }
+  footer > div.inner_wrap {
+    padding: 20px 0;
+    border-top: 1px solid #ebebeb;
+  }
+  footer > div.inner_wrap > p {
+    padding-bottom: 20px;
+  }
+}

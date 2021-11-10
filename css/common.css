@@ -28,30 +28,30 @@ img {
 
 @font-face {
   font-family: "klavica";
-  src: url("../font/KlavikaRegular-OSF.eot");
-  src: url("../font/KlavikaRegular-OSF.eot?#iefix") format("embedded-opentype"),
-    url("../font/KlavikaRegular-OSF.woff2") format("woff2"),
-    url("../font/KlavikaRegular-OSF.woff") format("woff"),
-    url("../font/KlavikaRegular-OSF.ttf") format("truetype"),
-    url("../font/KlavikaRegular-OSF.svg#FontName") format("svg");
+  src: url("../fonts/KlavikaRegular-OSF.eot");
+  src: url("../fonts/KlavikaRegular-OSF.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/KlavikaRegular-OSF.woff2") format("woff2"),
+    url("../fonts/KlavikaRegular-OSF.woff") format("woff"),
+    url("../fonts/KlavikaRegular-OSF.ttf") format("truetype"),
+    url("../fonts/KlavikaRegular-OSF.svg#FontName") format("svg");
 }
 @font-face {
   font-family: "rix";
-  src: url("../font/RixGoM.eot");
-  src: url("../font/RixGoM.eot?#iefix") format("embedded-opentype"),
-    url("../font/RixGoM.woff2") format("woff2"),
-    url("../font/RixGoM.woff") format("woff"),
-    url("../font/RixGoM.ttf") format("truetype"),
-    url("../font/RixGoM.svg#FontName") format("svg");
+  src: url("../fonts/RixGoM.eot");
+  src: url("../fonts/RixGoM.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/RixGoM.woff2") format("woff2"),
+    url("../fonts/RixGoM.woff") format("woff"),
+    url("../fonts/RixGoM.ttf") format("truetype"),
+    url("../fonts/RixGoM.svg#FontName") format("svg");
 }
 @font-face {
   font-family: "caps";
-  src: url("../font/KlavikaRegCaps.eot");
-  src: url("../font/KlavikaRegCaps.eot?#iefix") format("embedded-opentype"),
-    url("../font/KlavikaRegCaps.woff2") format("woff2"),
-    url("../font/KlavikaRegCaps.woff") format("woff"),
-    url("../font/KlavikaRegCaps.ttf") format("truetype"),
-    url("../font/KlavikaRegCaps.svg#FontName") format("svg");
+  src: url("../fonts/KlavikaRegCaps.eot");
+  src: url("../fonts/KlavikaRegCaps.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/KlavikaRegCaps.woff2") format("woff2"),
+    url("../fonts/KlavikaRegCaps.woff") format("woff"),
+    url("../fonts/KlavikaRegCaps.ttf") format("truetype"),
+    url("../fonts/KlavikaRegCaps.svg#FontName") format("svg");
 }
 
 /* header */
@@ -307,7 +307,7 @@ header {
   background-image: url(../images/blueshark.jpg);
 }
 .contents .project_list_wrap .project_list .project_item.item_06 {
-  background-color: #fff;
+  background-image: url(../images/tabori.jpg);
 }
 .contents .project_list_wrap .project_list .project_item.item_07 {
   background-image: url(../images/marvel.jpg);
