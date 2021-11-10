@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ++++++++++ Media Query ++++++++++ */
+/* -- mobile(start) -- */
+@media screen and (max-width: 767px) {
+
+/*~~~~~~~~~~~~~~~~~~~~VISUAL*/
+	
+	section.visual { display: none; width: 100%; height: 200px; margin-top: 80px; background: url("../images/bg_ceo_visual.jpg") no-repeat center 10%; }
+	
+/*~~~~~~~~~~~~~~~~~~~~CEO*/
+
+	section.ceo > div.inner_wrap > h2 { margin: 80px 0; margin-top: 150px; }
+	section.ceo > div.inner_wrap > div.bg_ceo { width: 90%; height: 350px; margin: 0 auto; background: url("../images/bg_ceo_M.jpg") no-repeat center 20%; background-size: cover; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment > h3 { margin: 80px 16px 20px 16px; font-weight: bold; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment > p.ceo { margin: 10px 20px; font-size: 0.875em; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment_sub > h3 { margin: 80px 16px 20px 16px; font-weight: bold; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment_sub > p.ceo { margin: 10px 20px 80px 20px; font-size: 0.875em;; }
+	
+}
+/* -- moblie(end) -- */
+
+/*++++++++++++++++++++++++++*/
+
+/* -- tablet(start) -- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+/*~~~~~~~~~~~~~~~~~~~~VISUAL*/
+	
+	section.visual { width: 100%; height: 400px; margin-top: 90px; background: url("../images/bg_ceo_visual.jpg") no-repeat center center; }
+	
+/*~~~~~~~~~~~~~~~~~~~~CEO*/
+
+	section.ceo > div.inner_wrap { position: relative; }
+	section.ceo > div.inner_wrap > h2 { margin: 90px 0; }
+	section.ceo > div.inner_wrap > div.bg_ceo { width: 100%; height: 675px; background: url("../images/bg_ceo.png") no-repeat center center; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment { position: absolute; top: 30%; right: 5%; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment > h3 { font-weight: bold; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment > p.ceo { font-size: 0.9375em; margin: 10px 0 0 10px; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment_sub { position: absolute; bottom: 10%; right: 5%; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment_sub > p.ceo { font-size: 0.9375em; margin: 10px 0 0 10px; }
+
+}
+/* -- tablet(end) -- */
+
+/*++++++++++++++++++++++++++*/
+
+/* -- desktop(start) -- */
+@media screen and (min-width: 1025px) {
+
+/*~~~~~~~~~~~~~~~~~~~~VISUAL*/
+	
+	section.visual { width: 100%; height: 480px; }
+	section.visual > div.vis_bg { width: 100%; height: 480px; margin-top: 100px; background: url("../images/bg_ceo_visual.jpg") no-repeat center center; }
+	
+/*~~~~~~~~~~~~~~~~~~~~CEO*/
+
+	section.ceo { margin-bottom: 100px; }
+	section.ceo > div.inner_wrap { position: relative; }
+	section.ceo > div.inner_wrap > h2 { margin: 100px 0; }
+	section.ceo > div.inner_wrap > div.bg_ceo { width: 100%; height: 675px; background: url("../images/bg_ceo.png") no-repeat center center; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment { position: absolute; top: 30%; right: 15%; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment > h3 { font-weight: bold; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment > p.ceo { font-size: 0.9375em; margin: 10px 0 0 10px; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment_sub { position: absolute; bottom: 10%; right: 15%; }
+	section.ceo > div.inner_wrap > div.ceo_wrap > div.ment_sub > p.ceo { font-size: 0.9375em; margin: 10px 0 0 10px; }
+
+}
+/* -- desktop(end) -- */

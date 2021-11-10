@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ++++++++++ Media Query ++++++++++ */
+/* -- mobile(start) -- */
+@media screen and (max-width: 767px) {
+
+/*~~~~~~~~~~~~~~~~~~~~visual*/
+
+	section.sec_visual { width: 100%; height: 400px; margin-top: 80px; background: url("../images/bg_qup_visual.jpg") no-repeat 40% center; }
+
+/*~~~~~~~~~~~~~~~~~~~~QUP*/
+
+	section.qup_box > h2 { margin: 80px 0; }
+	section.qup_box > p.qup_sub { margin-bottom: 80px; font-size: 0.875em; text-align: center; }
+
+	section.qup_box > div.inner_wrap > div.qup_01 { width: 93.75%; height: 380px; margin: 0 auto 80px auto; padding: 40px 20px; background: url("../images/img_qup_promo01.png") no-repeat center center; }
+	section.qup_box > div.inner_wrap > div.qup_02 { width: 93.75%; height: 380px; margin: 0 auto 80px auto; padding: 40px 20px; background: url("../images/img_qup_promo02.png") no-repeat center center; }
+	section.qup_box > div.inner_wrap > div.qup_03 { width: 93.75%; height: 380px; margin: 0 auto 80px auto; padding: 40px 20px; background: url("../images/img_qup_promo03.png") no-repeat center center; }
+	section.qup_box > div.inner_wrap > div > h3 { margin-bottom: 50px; text-align: center; color: #fff; }
+	section.qup_box > div.inner_wrap > div > p.t_sub { margin-bottom: 50px; font-size: 0.875em;  color: #fff; }
+	section.qup_box > div.inner_wrap > div > p.t_sub_02 { margin-bottom: 50px; font-size: 0.875em;  color: #fff; }
+
+	section.qup_box > div.inner_wrap { margin-bottom: 80px; }
+	section.qup_box > div.inner_wrap > h3 { margin-bottom: 50px; text-align: center; }
+	section.qup_box > div.inner_wrap > img { display: block; width: 90%; margin: 0 auto; }
+
+}
+/* -- moblie(end) -- */
+
+/*++++++++++++++++++++++++++*/
+
+/* -- tablet(start) -- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+/*~~~~~~~~~~~~~~~~~~~~visual*/
+
+	section.sec_visual { width: 100%; height: 400px; margin-top: 90px; background: url("../images/bg_qup_visual.jpg") no-repeat center center; }
+
+/*~~~~~~~~~~~~~~~~~~~~QUP*/
+
+	section.qup_box > h2 { margin: 90px 0; }
+	section.qup_box > p.qup_sub { margin-bottom: 90px; text-align: center; }
+
+	section.qup_box > div.inner_wrap > div.qup_01 { width: 49.4791%; height: 480px; margin: 0 auto 90px auto; padding: 50px 30px; background: url("../images/img_qup_promo01.png") no-repeat center center; }
+	section.qup_box > div.inner_wrap > div.qup_02 { width: 49.4791%; height: 480px; margin: 0 auto 90px auto; padding: 50px 30px; background: url("../images/img_qup_promo02.png") no-repeat center center; }
+	section.qup_box > div.inner_wrap > div.qup_03 { width: 49.4791%; height: 480px; margin: 0 auto 90px auto; padding: 50px 30px; background: url("../images/img_qup_promo03.png") no-repeat center center; }
+	section.qup_box > div.inner_wrap > div > h3 { font-size: 1.25em; margin-bottom: 50px; text-align: center; color: #fff; }
+	section.qup_box > div.inner_wrap > div > p.t_sub { margin-bottom: 50px; color: #fff; }
+	section.qup_box > div.inner_wrap > div > p.t_sub_02 { margin-bottom: 50px; color: #fff; }
+
+	section.qup_box > div.inner_wrap { margin-bottom: 90px; }
+	section.qup_box > div.inner_wrap > h3 { margin-bottom: 50px; font-size: 1.25em; text-align: center; }
+	section.qup_box > div.inner_wrap > img { display: block; width: 90%; margin: 0 auto; }
+
+	section.qup_box > div.gif_box { display: none; }
+	section.qup_box > div.expl { display: none; }
+
+}
+/* -- tablet(end) -- */
+
+/*++++++++++++++++++++++++++*/
+
+/* -- desktop(start) -- */
+@media screen and (min-width: 1025px) {
+
+/*~~~~~~~~~~~~~~~~~~~~visual*/
+
+	section.sec_visual { width: 100%; height: 480px; margin-top: 100px; background: url("../images/bg_qup_visual.jpg") no-repeat center center; }
+
+/*~~~~~~~~~~~~~~~~~~~~QUP*/
+
+	section.qup_box > h2 { margin: 100px; }
+	section.qup_box > p.qup_sub { margin-bottom: 100px; text-align: center; }
+	section.qup_box > div.inner_wrap > div { overflow: hidden; position: relative; }
+	section.qup_box > div.inner_wrap > div.qup_01 { float: left; width: 32.2033%; height: 480px; margin-right: 1.6949%; background: url("../images/img_qup_promo01.png") no-repeat center center; }
+	section.qup_box > div.inner_wrap > div.qup_02 { float: left; width: 32.2033%; height: 480px; margin-right: 1.6949%; background: url("../images/img_qup_promo02.png") no-repeat center center; }
+	section.qup_box > div.inner_wrap > div.qup_03 { float: left; width: 32.2033%; height: 480px; margin-right: 0; background: url("../images/img_qup_promo03.png") no-repeat center center; }
+	section.qup_box > div.inner_wrap > div > h3 { position: absolute; top: 50%; left: 50%; width: 230px; font-size: 1.5em; margin-bottom: 20px; text-align: center; color: #fff; transform: translate( -50%, -50%) }
+	section.qup_box > div.inner_wrap > div > p.t_sub { position: absolute; bottom: 40%; margin-bottom: 20px; color: #fff; opacity: 0; }
+	section.qup_box > div.inner_wrap > div > p.t_sub_02 { position: absolute; bottom: 10%; margin-bottom: 20px; color: #fff; opacity: 0; }
+	section.qup_box > div.inner_wrap > div:hover > h3 { position: absolute; top: 20%; font-size: 1.5em; margin-bottom: 20px; color: #fff; transition: all 0.3s linear; }
+	section.qup_box > div.inner_wrap > div:hover > p.t_sub { position: absolute; left: 20%; bottom: 40%; margin-bottom: 20px; color: #fff; transition: all 0.6s ease-in 0.6s; opacity: 1; }
+	section.qup_box > div.inner_wrap > div:hover > p.t_sub_02 { position: absolute; left: 20%; bottom: 10%; margin-bottom: 20px; color: #fff; transition: all 0.9s ease-in 1.2s; opacity: 1; }
+
+	section.qup_box > div.inner_wrap { margin-bottom: 100px; }
+	section.qup_box > div.inner_wrap > h3 { font-size: 1.5em; margin: 100px 0 50px 0; }
+	section.qup_box > div.inner_wrap > div.btn_center { margin: 0 40px; }
+	section.qup_box > div.inner_wrap > div.btn_center > button { position: relative; display: inline-block; width: 147px; height: 147px; margin-right: 39px; text-indent: -99999em; }
+	section.qup_box > div.inner_wrap > div.btn_center > button::before { position: absolute; top: 0; right: -40px; content: ""; width: 39px; height: 147px; background: url("../images/qup_box_next.jpg") no-repeat; background-size: cover; }
+	section.qup_box > div.inner_wrap > div.btn_center > button:nth-of-type(1) { background: url("../images/qup_box_01.jpg") no-repeat; background-size: cover; }
+	section.qup_box > div.inner_wrap > div.btn_center > button:nth-of-type(2) { background: url("../images/qup_box_02.jpg") no-repeat; background-size: cover; }
+	section.qup_box > div.inner_wrap > div.btn_center > button:nth-of-type(3) { background: url("../images/qup_box_03.jpg") no-repeat; background-size: cover; }
+	section.qup_box > div.inner_wrap > div.btn_center > button:nth-of-type(4) { background: url("../images/qup_box_04.jpg") no-repeat; background-size: cover; }
+	section.qup_box > div.inner_wrap > div.btn_center > button:nth-of-type(5) { background: url("../images/qup_box_05.jpg") no-repeat; background-size: cover; }
+	section.qup_box > div.inner_wrap > div.btn_center > button:nth-of-type(6) { background: url("../images/qup_box_06.jpg") no-repeat; background-size: cover; }
+	section.qup_box > div.inner_wrap > div.btn_center > button:last-child { margin-right: 0; }
+
+	section.qup_box > div.expl > div.inner_wrap { position: relative; width: 100%; height: 120px; margin-bottom: 100px; padding: 100px 0; background: #f3f3f3; text-align: center; }
+	section.qup_box > div.expl > div.inner_wrap::before { content:""; display: block; position: absolute; top: -8%; left: 5%; width: 34px; height: 17px; background: url("../images/bg_qup_up.png") no-repeat center center;  }
+	section.qup_box > div.expl > div.inner_wrap > p.p_show { display: block; }
+	section.qup_box > div.expl > div.inner_wrap > p { display: none; }
+
+}
+/* -- desktop(end) -- */
