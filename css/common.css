@@ -307,7 +307,7 @@ header {
   background-image: url(../images/blueshark.jpg);
 }
 .contents .project_list_wrap .project_list .project_item.item_06 {
-  background-image: url(../images/dreamworks.jpg);
+  background-color: #fff;
 }
 .contents .project_list_wrap .project_list .project_item.item_07 {
   background-image: url(../images/marvel.jpg);
@@ -319,7 +319,7 @@ header {
   background-image: url(../images/hitejinro.jpg);
 }
 .contents .project_list_wrap .project_list .project_item.item_10 {
-  background-color: #fff;
+  background-image: url(../images/dreamworks.jpg);
 }
 .contents .about_me {
   width: 100%;
