@@ -205,6 +205,10 @@
   .page_2 .mini_con_pop.mini .mcp_bg li {
       display: none;
   }
+  .page_2 .mini_con_pop.mini .mcp_bg li:first-child .mcp_text
+  , .page_2 .mini_con_pop.mini .mcp_bg li:last-child .mcp_text {
+    width: 100%;
+  }
 .page_2 .mini_con_pop.mini .mcp_con {
     width: 100%;
     height: 230px;
@@ -233,6 +237,7 @@
     border-radius: 5px;
     width: 80px;
     margin: 0 auto;
+    display: block;
 }
 .page_2 .mini_con_pop.mini .mcp_con .mcp_text .btn_more a {
     color: #fff;
@@ -335,6 +340,7 @@
     border-radius: 5px;
     width: 100px;
     margin: 0 auto;
+    display: block;
 }
 .page_2 .mini_con_pop.full .mcp_con .mcp_text .btn_more a {
     color: #fff;
