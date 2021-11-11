@@ -60,4 +60,11 @@
 	</section>
 </body>
 
+<script type="text/javascript">
+	var images = ['bg_intro1.jpg', 'bg_intro2.jpg', 'bg_intro3.jpg'];
+	
+	$('section.intro').css({'background-image': 'url(./images/' + images[Math.floor(Math.random() * images.length)] + ')'}); 
+	
+</script>
+
 </html>
