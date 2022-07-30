@@ -1,0 +1,103 @@
+/* header */
+header {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    top: 0;
+    color: #fff;
+    text-align: center;
+    z-index: 31;
+}
+/* footer */
+footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    z-index: 31;
+}
+
+/* contents */
+.contents {
+    width: 100%;
+    height: calc(100vh);
+    margin: 0 auto;
+    color: #fff;
+}
+.contents .item_bg {
+    width: 100%;
+    height: calc(100vh);
+    background-color: #000;
+    position: relative;
+    transition: 1s;
+}
+.contents .item_wrap {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+.contents .item_wrap .item_list {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.contents .item_wrap .item_list::-webkit-scrollbar {
+    display: none;
+}
+.contents .item_wrap .item_list > li {
+    position: relative;
+    margin-right: 50px;
+}
+.contents .item_wrap .item_list .item_box {
+    padding: 60px 0 0 50px;
+    width: 350px;
+    height: 350px;
+    opacity: 0.5;
+}
+.contents .item_wrap .item_list .item_box .tit_underline {
+    width: 150px;
+    height: 5px;
+    display: block;
+    background-color: #fff;
+    margin: 20px 0 50px 0;
+}
+.contents .item_wrap .item_list .box_line {
+    width: 350px;
+    height: 350px;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.contents .item_wrap .item_list .box_line.m {
+    opacity: 1;
+    position: fixed;
+    margin-left: 100px;
+    display: none;
+}
+@media screen and (min-width: 501px) {
+    .contents .item_wrap .item_list > li:hover .item_box {
+        opacity: 1;
+        transition: 0.8s;
+    }
+    .contents .item_wrap .item_list > li:hover .box_line {
+        opacity: 1;
+        transition: 0.8s;
+    }
+}
+@media screen and (max-width: 500px) {
+    .contents .item_wrap .item_list .box_line.m {
+        display: none;
+        
+    }
+}

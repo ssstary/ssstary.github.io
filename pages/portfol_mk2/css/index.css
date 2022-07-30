@@ -8,6 +8,8 @@ header {
     color: #fff;
     text-align: center;
     z-index: 31;
+    display: flex;
+    justify-content: space-between;
 }
 /* footer */
 footer {
@@ -24,63 +26,101 @@ footer {
 /* contents */
 .contents {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh);
     margin: 0 auto;
     color: #fff;
 }
 .contents .item_bg {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh);
     background-color: #000;
     position: relative;
+    transition: 1s;
 }
-.contents .item_wrap {
-    width: 100%;
-    position: absolute;
+.contents .item_bg .item_wrap {
+    width: calc(100% - 300px);
+    position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
     overflow: hidden;
 }
-.contents .item_wrap .item_list {
-    display: flex;
-    flex-direction: row;
-    overflow: scroll;
-    -ms-overflow-style: none;
+.contents .item_bg .btn {
+    position: absolute;
+    top: 50%;
 }
-.contents .item_wrap .item_list::-webkit-scrollbar {
-    display: none;
+.contents .item_bg .btn.prev {
+    left: 20px;
 }
-.contents .item_wrap .item_list > li {
+.contents .item_bg .btn.next {
+    right: 20px;
+}
+.contents .item_bg .item_wrap .item_list {
+    width: 600%;
+    min-height: 300px;
     position: relative;
-    margin-right: 50px;
+    display: flex;
+    flex-wrap: nowrap;
 }
-.contents .item_wrap .item_list > li:hover .item_box {
-    opacity: 1;
-    transition: 0.8s;
-}
-.contents .item_wrap .item_list > li:hover .box_line {
-    opacity: 1;
-    transition: 0.8s;
+.contents .item_bg .item_wrap .item_list > li {
+    width: calc(100% / 6);
+    padding: 50px;
+    position: relative;
 }
 .contents .item_wrap .item_list .item_box {
-    padding: 60px 0 0 50px;
-    width: 350px;
-    height: 350px;
-    opacity: 0.5;
+}
+.contents .item_wrap .item_list a {
+    color: #fff;
+}
+.contents .item_wrap .item_list .item_box .item_box_tit {
+    font-size: 15px;
+    font-weight: 400;
+}
+.contents .item_wrap .item_list .item_box .item_box_desc {
+    font-size: 30px;
+    font-weight: 600;
 }
 .contents .item_wrap .item_list .item_box .tit_underline {
-    width: 150px;
-    height: 5px;
+    position: relative;
+    left: -48px;
+    width: 400px;
+    height: 4px;
     display: block;
     background-color: #fff;
-    margin: 20px 0 50px 0;
+    border-radius: 3px;
+    margin: 20px 0 30px 0;
 }
 .contents .item_wrap .item_list .box_line {
-    width: 350px;
-    height: 350px;
+    width: 95%;
+    height: 90%;
     border: 5px solid #fff;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     opacity: 0;
+    transition: 0.3s;
+}
+.contents .item_wrap .item_list a:hover .box_line {
+    opacity: 1;
+}
+.contents .item_bg .item_wrap .indicator {
+    margin-top: 50px;
+}
+.contents .item_bg .item_wrap .indicator_bar {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.contents .item_bg .item_wrap .indicator_bar > button {
+    width: calc(100% / 6);
+    height: 4px;
+    background-color: #fff;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.contents .item_bg .item_wrap .indicator_bar > button.on {
+    opacity: 1;
 }
