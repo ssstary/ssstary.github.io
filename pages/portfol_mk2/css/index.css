@@ -105,12 +105,13 @@ footer {
     color: #fff;
     position: relative;
     z-index: 29;
+    background-color: #000;
 }
 .contents .item_bg {
     width: 100%;
     height: calc(100vh);
     background-color: #000;
-    /* background-image: url(../images/hyundai.jpg); */
+    background: no-repeat center center;
     position: relative;
     transition: 1s;
 }
@@ -214,6 +215,169 @@ footer {
 .contents .item_bg .item_wrap .indicator_bar > li.on {
     opacity: 1;
 }
+
+.contents .about_me {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    transition: all 0.3s;
+    padding: 60px 20px;
+  }
+  .contents .about_me .con_text {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contents .about_me .con_text .con_tit {
+    font-size: 30px;
+    padding: 20px 0;
+  }
+  .contents .about_me .con_text .con_desc {
+    font-size: 18px;
+    font-family: "NanumSquare";
+  }
+  .contents .about_me .con_text .con_desc p {
+    margin-bottom: 5px;
+    line-height: 26px;
+  }
+  .contents .about_me .con_text .con_desc p span {
+    font-size: 19px;
+    color: #48494b;
+  }
+  .contents .about_me .con_card {
+    margin-bottom: 30px;
+  }
+  .contents .about_me .con_card ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .contents .about_me .con_card .card {
+    height: 600px;
+    flex: 1;
+    position: relative;
+  }
+  .contents .about_me .con_card .card > div {
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .contents .about_me .con_card .card .cardimages {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .contents .about_me .con_card .card .front img {
+    opacity: 0.7;
+    display: block;
+    margin: 0 auto;
+  }
+  .contents .about_me .con_card .card .front img:first-child {
+    opacity: 0.7;
+    width: 60%;
+    padding: 20px;
+  }
+  .contents .about_me .con_card .card .front img:last-child {
+    opacity: 0.7;
+    width: 40px;
+    transition: all 0.3s;
+  }
+  .contents .about_me .con_card .card .front:hover img:last-child {
+    transform: rotate(90deg);
+  }
+  .contents .about_me .con_card .card1 {
+    background-color: #363636;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .contents .about_me .con_card .card2 {
+    background-color: #222021;
+  }
+  .contents .about_me .con_card .card2 p {
+    width: 65%;
+    padding-bottom: 95%;
+    background-image: url(../images/itsme.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .contents .about_me .con_card .card3 {
+    background-color: #48494b;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .contents .about_me .con_card h2 {
+    text-align: center;
+    font-size: 24px;
+    padding: 50px 30px;
+  }
+  .contents .about_me .con_card p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .contents .about_me .con_card .card dl {
+    text-align: center;
+    padding: 10px;
+  }
+  .contents .about_me .con_card .card dl dt {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .contents .about_me .con_card .card dl dd {
+    line-height: 25px;
+  }
+  /* 카드뒤집기 */
+  .back {
+    transform: rotateY(90deg);
+  }
+  .cardRotate .front {
+    opacity: 1;
+    animation: rotateAni 0.5s 1;
+    transform: rotateY(90deg);
+  }
+  .cardRotate .back {
+    opacity: 1;
+    animation: rotateAni2 0.5s 0.5s 1 backwards;
+    transform: rotateY(0);
+  }
+  .backRotate .front {
+    opacity: 1;
+    animation: backAni 0.5s 1;
+  }
+  .backRotate .back {
+    opacity: 0;
+  }
+  @keyframes rotateAni {
+    0% {
+      transform: rotateY(0);
+    }
+    100% {
+      transform: rotateY(90deg);
+    }
+  }
+  @keyframes rotateAni2 {
+    0% {
+      transform: rotateY(-90deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+  
+  @keyframes backAni {
+    0% {
+      transform: rotateY(90deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
 
 /* popmenu */
 .popmenu_wrap {
@@ -319,6 +483,36 @@ footer {
     .contents .item_wrap .item_list .item_box .tit_underline {
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+@media screen and (max-width: 645px) {
+    .contents.black {
+        height: 100%;
+    }
+    .contents .about_me .con_card ul {
+      flex-direction: column;
+      height: 1800px;
+    }
+    .contents .about_me .con_card .card {
+      flex: 2;
+      width: 100%;
+    }
+    .contents .about_me .con_card .card2 p {
+      width: 65%;
+      padding-bottom: 70%;
+      background-position: center 10%;
+    }
+    .contents .about_me .con_card .card1 {
+      background-color: #363636;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 10px;
+    }
+    .contents .about_me .con_card .card3 {
+      background-color: #48494b;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
 }
 
