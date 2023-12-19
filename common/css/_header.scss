@@ -1,0 +1,103 @@
+.skip_navi {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    a {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -9999px;
+        z-index: 1;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #333;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        &:hover,
+        &:focus {
+            top: 0;
+        }
+    }
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: all 0.3s;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto !important;
+
+        .l_header_wrap {
+            width: 60px;
+            height: 60px;
+        }
+        .c_header_wrap {
+            h1 {
+                font-family: "ptsb";
+                font-size: 2rem;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+
+        .r_header_wrap {
+            width: 60px;
+            height: 60px;
+            display: table;
+            padding: 23px 20px;
+
+            .h_btn {
+                width: 20px;
+                display: table-cell;
+                vertical-align: middle;
+                position: relative;
+                cursor: pointer;
+
+                span {
+                    background: #fff;
+                    width: 100%;
+                    height: 2px;
+                    border-radius: 1px;
+                    display: block;
+                    position: absolute;
+                    transition: ease-out 0.3s;
+
+                    &.h_btn_1 {
+                        top: 0;
+                    }
+                    &.h_btn_2 {
+                        top: 50%;
+                        margin-top: -1px;
+                    }
+                    &.h_btn_3 {
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &.scrolled {
+        width: calc(100% - 10px);
+        margin: 5px;
+        background: rgba(0, 0, 0, 0.8);
+        border: 1px solid #000;
+        border-radius: 10px;
+        height: 50px;
+    }
+}

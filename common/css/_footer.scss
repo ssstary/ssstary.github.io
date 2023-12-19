@@ -1,0 +1,15 @@
+/*푸터*/
+footer {
+    text-align: center;
+    .container {
+        .text_wrap {
+            color: #071734;
+            text-shadow: 0 0 4px #fff;
+            .sld_ttl {
+                font-size: 0.9rem;
+                margin-bottom: unset;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
