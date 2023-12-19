@@ -59,7 +59,12 @@ b {
                 &.needflex {
                     justify-content: center;
                     align-items: stretch;
-                    gap: 0 5%;
+                    gap: 30px 5%;
+                    @include maxWidth(480px) {
+                        padding: 20px;
+                        flex-direction: column;
+                        align-items: end;
+                    }
                 }
 
                 @keyframes neon-flicker {
@@ -94,6 +99,10 @@ b {
                     transition: 0.5s;
                     &:hover {
                         background: #fff;
+                    }
+                    @include maxWidth(480px) {
+                        width: 40%;
+                        height: 6px;
                     }
                 }
                 p {
@@ -147,11 +156,18 @@ b {
         background: url(../images/divider_bg2.jpg) no-repeat center center;
         background-attachment: fixed;
         background-size: cover;
+        @include maxWidth(480px) {
+            padding: 5rem 0;
+            background-size: cover;
+        }
     }
 }
 .conbox {
+    @include maxWidth(480px) {
+        padding: 7.5rem 0;
+    }
     min-height: 50vh;
-    padding: 15rem 0;
+    padding: 10rem 0;
     width: calc(100% - 40px);
     margin: 0 auto;
     background: #fff;
@@ -191,9 +207,17 @@ b {
             }
         }
         .needflex {
-            gap: 0 5%;
+            gap: 5rem 5%;
+            @include maxWidth(480px) {
+                flex-direction: column;
+            }
             figure {
                 max-width: 200px;
+                min-width: 180px;
+                align-self: flex-start;
+                @include maxWidth(480px) {
+                    align-self: unset;
+                }
             }
             .plist {
             }
@@ -205,7 +229,19 @@ b {
             // border: 2px solid transparent;
             overflow: hidden;
             &.needflex {
-                gap: 0 5px;
+                gap: 5px 5px;
+                @include maxWidth(720px) {
+                    flex-direction: column;
+
+                    .swiper-container {
+                        width: 100%;
+                        height: 500px;
+                        &.nav-slider {
+                            width: 100%;
+                            height: 150px;
+                        }
+                    }
+                }
             }
             // &:hover {
             //     border: 2px solid rgba(7, 23, 52, 1);
@@ -223,6 +259,7 @@ b {
                 flex-shrink: 0;
                 &.nav-slider {
                     width: 20%;
+                    // min-width: 270px;
                     overflow: hidden;
                     display: block;
                     .swiper-slide {
@@ -237,8 +274,12 @@ b {
                         }
                         .content {
                             width: 100%;
+                            background: unset;
+                            padding: 0 5%;
                             .title {
                                 font-size: 20px;
+                                margin-bottom: unset;
+                                word-break: break-all;
                             }
                         }
                         background: #071734;
@@ -282,12 +323,21 @@ b {
                 }
                 .content {
                     position: absolute;
-                    top: 40%;
+                    top: 50%;
+                    transform: translateY(-50%);
                     left: 0;
-                    width: 70%;
-                    padding-left: 5%;
+                    width: auto;
                     color: #fff;
                     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+                    background: rgba(0, 0, 0, 0.8);
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    padding: 3rem 5%;
+                    @include maxWidth(480px) {
+                        width: 100%;
+                        border-top-right-radius: unset;
+                        border-bottom-right-radius: unset;
+                    }
                     .title {
                         font-size: 2.6em;
                         font-weight: bold;
